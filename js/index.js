@@ -12,7 +12,10 @@ var right = document.getElementById('right');
 var shadow = document.getElementsByClassName('shadow')[0];
 var vid = document.getElementsByClassName('vid')[0];
 var audio = document.getElementsByTagName('audio')[0];
-
+document.addEventListener("WeixinJSBridgeReady", function () {
+    audio.play();
+    audio.loop;
+}, false);
 fff[7].onclick = function () {
     if (audio.paused) {
         audio.play();
