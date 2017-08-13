@@ -427,9 +427,9 @@ function click() {
             vid.style.left = vslpa + 'rem';
         }
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideInLeft'
             setTimeout(function () {
-                removeClass(bg1, 'animated slideInRight');
+                removeClass(bg1, 'animated slideInLeft');
             }, 1000);
             if (parseInt(vid.style.left) > 0) {
                 n1 = n1 + 2;
