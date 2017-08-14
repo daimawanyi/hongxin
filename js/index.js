@@ -71,29 +71,49 @@ function click() {
     };
     abo[1].onclick = function () {
         if (fff[2].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg1.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
             var a = parseInt(vid.style.left);
             vid.style.left = a + yd2 + 'rem';
         } else if (fff[4].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg1.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
             var b = parseInt(vid.style.left);
             vid.style.left = b + yd3 + 'rem';
         } else if (fff[6].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg1.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
             var c = parseInt(vid.style.left);
             vid.style.left = c + yd4 + 'rem';
         }
 
-        bg1.src = 'img/bg1.png';
         fff[0].style.opacity = 1;
         fff[0].style.borderBottom = '.02rem solid white';
         fff[2].style.borderBottom = '';
@@ -116,34 +136,55 @@ function click() {
     };
     abo[2].onclick = function () {
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg2.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
             if (vid.style.left == '') {
                 vid.style.left = '0rem';
             }
+
             var a = parseInt(vid.style.left);
             vid.style.left = a + -yd2 + 'rem';
 
         } else if (fff[4].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg2.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + yd2 + 'rem';
         } else if (fff[6].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg2.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
 
             var c = parseInt(vid.style.left);
             vid.style.left = c + yd3 + 'rem';
         }
-        bg1.src = 'img/bg2.png';
         fff[2].style.opacity = 1;
         fff[2].style.borderBottom = '.02rem solid white';
         fff[0].style.borderBottom = '';
@@ -168,10 +209,17 @@ function click() {
     };
     abo[3].onclick = function () {
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg3.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
             if (vid.style.left == '') {
                 vid.style.left = '0rem';
@@ -179,23 +227,36 @@ function click() {
             var a = parseInt(vid.style.left);
             vid.style.left = a + -yd3 + 'rem';
         } else if (fff[2].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg3.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + -yd2 + 'rem';
         } else if (fff[6].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg3.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
 
             var c = parseInt(vid.style.left);
             vid.style.left = c + yd2 + 'rem';
         }
-        bg1.src = 'img/bg3.png';
         fff[4].style.opacity = 1;
         fff[4].style.borderBottom = '.02rem solid white';
         fff[2].style.borderBottom = '';
@@ -220,33 +281,53 @@ function click() {
     };
     abo[4].onclick = function () {
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg4.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
             if (vid.style.left == '') {
                 vid.style.left = '0rem';
             }
             var a = parseInt(vid.style.left);
             vid.style.left = a + -yd4 + 'rem';
         } else if (fff[2].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg4.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + -yd3 + 'rem';
         } else if (fff[4].style.opacity == 1) {
-            bg1.className = 'animated slideInRight'
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg4.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
             var c = parseInt(vid.style.left);
             vid.style.left = c + -yd2 + 'rem';
         }
-        bg1.src = 'img/bg4.png';
         fff[6].style.opacity = 1;
         fff[6].style.borderBottom = '.02rem solid white';
         fff[2].style.borderBottom = '';
@@ -285,27 +366,54 @@ function click() {
         }
 
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInRight';
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg2.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
-
+            }, 1500);
         } else if (fff[2].style.opacity == 1) {
-            bg1.className = 'animated slideInRight';
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg3.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
         } else if (fff[4].style.opacity == 1) {
-            bg1.className = 'animated slideInRight';
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg4.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
         } else if (fff[6].style.opacity == 1) {
-            bg1.className = 'animated slideInRight';
+            bg1.className = 'animated slideOutLeft';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutLeft');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg1.png';
+                bg1.className = 'animated slideInRight';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
-            }, 1000);
+            }, 1500);
 
             if (parseInt(vid.style.left) < 0) {
                 nu1 = nu1 + 2;
@@ -317,7 +425,6 @@ function click() {
 
 
         if (content1.style.display == 'block') {
-            bg1.src = 'img/bg2.png';
             fff[2].style.opacity = 1;
             fff[2].style.borderBottom = '.02rem solid white';
             fff[0].style.borderBottom = '';
@@ -339,8 +446,6 @@ function click() {
             content2.style.top = window.screen.availHeight + 'px';
             scroll(0, 0)
         } else if (content2.style.display == 'block') {
-            tmp = 2
-            bg1.src = 'img/bg3.png';
             fff[4].style.opacity = 1;
             fff[4].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';
@@ -364,8 +469,6 @@ function click() {
             scroll(0, 0)
 
         } else if (content3.style.display == 'block') {
-            tmp = 3
-            bg1.src = 'img/bg4.png';
             fff[6].style.opacity = 1;
             fff[6].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';
@@ -388,8 +491,6 @@ function click() {
             scroll(0, 0)
 
         } else if (content4.style.display == 'block') {
-            tmp = 4
-            bg1.src = 'img/bg1.png'
             fff[0].style.opacity = 1;
             fff[0].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';
@@ -430,10 +531,18 @@ function click() {
             vid.style.left = vslpa + 'rem';
         }
         if (fff[0].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg4.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
+
             if (parseInt(vid.style.left) > 0) {
                 n1 = n1 + 2;
                 n2 = n2 + 2;
@@ -441,27 +550,45 @@ function click() {
             }
 
         } else if (fff[2].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg1.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
         } else if (fff[4].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg2.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
         } else if (fff[6].style.opacity == 1) {
-            bg1.className = 'animated slideInLeft'
+            bg1.className = 'animated slideOutRight';
+            setTimeout(function () {
+                removeClass(bg1, 'animated slideOutRight');
+            }, 500);
+            setTimeout(function () {
+                bg1.src = 'img/bg3.png';
+                bg1.className = 'animated slideInLeft';
+            }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
-            }, 1000);
+            }, 1500);
         }
 
 
         if (content1.style.display == 'block') {
-            tmp = 1
-
-            bg1.src = 'img/bg4.png';
             fff[6].style.opacity = 1;
             fff[6].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';
@@ -486,8 +613,6 @@ function click() {
 
 
         } else if (content2.style.display == 'block') {
-            tmp = 2
-            bg1.src = 'img/bg1.png'
             fff[0].style.opacity = 1;
             fff[0].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';
@@ -512,8 +637,6 @@ function click() {
 
 
         } else if (content3.style.display == 'block') {
-            tmp = 3
-            bg1.src = 'img/bg2.png';
             fff[2].style.opacity = 1;
             fff[2].style.borderBottom = '.02rem solid white';
             fff[0].style.borderBottom = '';
@@ -537,8 +660,6 @@ function click() {
             scroll(0, 0)
 
         } else if (content4.style.display == 'block') {
-            tmp = 4
-            bg1.src = 'img/bg3.png';
             fff[4].style.opacity = 1;
             fff[4].style.borderBottom = '.02rem solid white';
             fff[2].style.borderBottom = '';

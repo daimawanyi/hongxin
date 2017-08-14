@@ -98,8 +98,6 @@ a {
 }
 
 .first-screen {
-    /*background: url("../img/BG-01.gif") no-repeat;
-    background-size: 200% 100%;*/
     position: fixed;
     z-index: -1;
     width: 100%;
