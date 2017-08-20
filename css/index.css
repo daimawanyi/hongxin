@@ -211,10 +211,15 @@ a {
 }*/
 
 .content1 .part11 {
-    height: 42.5rem;
+    height: 29.13rem;
     background: url("../img/patr1_12.png") no-repeat;
     background-size: 100% 100%;
     position: relative;
+}
+.content1 .last{
+    height: 9.4rem;
+    background: url("../img/last.png") no-repeat;
+    background-size: 100% 100%;
 }
 .content1 .developmenthistory{
     height: 12.81rem;
@@ -395,7 +400,7 @@ a {
     animation: fadein 4s linear 1s;
     animation-fill-mode: forwards;
 }
-.content1 .part12{
+/*.content1 .part12{
     width: 2.2rem;
     height: 2.19rem;
     position: relative;
@@ -406,7 +411,8 @@ a {
 .content1 .part12 img{
     width: 2.2rem;
     height: 2.19rem;
-}
+}*/
+
 .content1 .part11 .cjx{
     background: url("../img/cjx.png")no-repeat;
     background-size: 100% 100%;
@@ -820,8 +826,13 @@ a {
     margin: 7.98rem 0 0 1.8rem;
 }
 .content2 .part33 {
-    height: 41.91rem;
+    height: 28.6rem;
     background: url("../img/page2/M-02_36.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content2 .last{
+    height: 9.4rem;
+    background: url("../img/page2/last.png") no-repeat;
     background-size: 100% 100%;
 }
 .dash2{
@@ -933,7 +944,7 @@ a {
     position: absolute;
     margin: .99rem 0 0 3.53rem;
 }
-.content2 .part34{
+/*.content2 .part34{
     width: 2.2rem;
     height: 2.19rem;
     position: relative;
@@ -944,7 +955,7 @@ a {
 .content2 .part34 img{
     width: 2.2rem;
     height: 2.19rem;
-}
+}*/
 /********************cont3******************************/
 .content3 .part2 {
     height: 5.38rem;
@@ -963,8 +974,13 @@ a {
 }
 
 .content3 .part4 {
-    height: 31.51rem;
+    height: 18.18rem;
     background: url("../img/page3/page3_04.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .last{
+    height: 9.4rem;
+    background: url("../img/page3/last.png") no-repeat;
     background-size: 100% 100%;
 }
 .biger{
@@ -1086,7 +1102,7 @@ a {
 }
 
 .content4 .part15 {
-    height: 13.94rem;
+    height: 9.4rem;
     background: url("../img/page4/page4_16.png") no-repeat;
     background-size: 100% 100%;
 }
