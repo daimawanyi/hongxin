@@ -30,6 +30,8 @@ fff[7].onclick = function () {
     }
 };
 
+OUTLINE.style.width=4.22+'rem';
+OUTLINE.style.height=4.22+'rem';
 fff[0].style.opacity = 1;
 fff[0].style.borderBottom = '.02rem solid white';
 bg.style.height = window.screen.availHeight + 'px';
