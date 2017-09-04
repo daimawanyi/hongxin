@@ -1,6 +1,7 @@
 var fff = document.getElementsByTagName('li');
 var abo = document.getElementsByTagName('a');
 var bg1 = document.getElementById('bg1');
+var OUTLINE = document.getElementsByClassName('OUTLINE')[0];
 var bg = document.getElementsByClassName('first-screen')[0];
 var content1 = document.getElementsByClassName('content1')[0];
 var content2 = document.getElementsByClassName('content2')[0];
@@ -72,43 +73,58 @@ function click() {
     abo[1].onclick = function () {
         if (fff[2].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg1.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
             var a = parseInt(vid.style.left);
             vid.style.left = a + yd2 + 'rem';
         } else if (fff[4].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg1.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
             var b = parseInt(vid.style.left);
             vid.style.left = b + yd3 + 'rem';
         } else if (fff[6].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg1.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
             var c = parseInt(vid.style.left);
             vid.style.left = c + yd4 + 'rem';
@@ -137,15 +153,20 @@ function click() {
     abo[2].onclick = function () {
         if (fff[0].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg2.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
             if (vid.style.left == '') {
                 vid.style.left = '0rem';
@@ -156,30 +177,40 @@ function click() {
 
         } else if (fff[4].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg2.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + yd2 + 'rem';
         } else if (fff[6].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg2.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var c = parseInt(vid.style.left);
@@ -210,15 +241,20 @@ function click() {
     abo[3].onclick = function () {
         if (fff[0].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg3.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             if (vid.style.left == '') {
@@ -228,30 +264,40 @@ function click() {
             vid.style.left = a + -yd3 + 'rem';
         } else if (fff[2].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg3.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + -yd2 + 'rem';
         } else if (fff[6].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg3.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var c = parseInt(vid.style.left);
@@ -282,15 +328,20 @@ function click() {
     abo[4].onclick = function () {
         if (fff[0].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg4.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
             if (vid.style.left == '') {
                 vid.style.left = '0rem';
@@ -299,30 +350,40 @@ function click() {
             vid.style.left = a + -yd4 + 'rem';
         } else if (fff[2].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg4.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var b = parseInt(vid.style.left);
             vid.style.left = b + -yd3 + 'rem';
         } else if (fff[4].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg4.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             var c = parseInt(vid.style.left);
@@ -367,52 +428,72 @@ function click() {
 
         if (fff[0].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg2.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
         } else if (fff[2].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg3.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
         } else if (fff[4].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg4.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
         } else if (fff[6].style.opacity == 1) {
             bg1.className = 'animated slideOutLeft';
+            OUTLINE.className ='animated slideOutLeft';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutLeft');
+                removeClass(OUTLINE, 'animated slideOutLeft');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg1.png';
                 bg1.className = 'animated slideInRight';
+                OUTLINE.className = 'animated slideInRight';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInRight');
+                removeClass(OUTLINE, 'animated slideInRight');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             if (parseInt(vid.style.left) < 0) {
@@ -532,15 +613,20 @@ function click() {
         }
         if (fff[0].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg4.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
 
             if (parseInt(vid.style.left) > 0) {
@@ -551,39 +637,54 @@ function click() {
 
         } else if (fff[2].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg1.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
         } else if (fff[4].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg2.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
         } else if (fff[6].style.opacity == 1) {
             bg1.className = 'animated slideOutRight';
+            OUTLINE.className ='animated slideOutRight';
             setTimeout(function () {
                 removeClass(bg1, 'animated slideOutRight');
+                removeClass(OUTLINE, 'animated slideOutRight');
             }, 500);
             setTimeout(function () {
                 bg1.src = 'img/bg3.png';
                 bg1.className = 'animated slideInLeft';
+                OUTLINE.className = 'animated slideInLeft';
             }, 500);
             setTimeout(function () {
                 removeClass(bg1, 'animated slideInLeft');
+                removeClass(OUTLINE, 'animated slideInLeft');
+                OUTLINE.className ='OUTLINE';
             }, 1500);
         }
 

@@ -117,34 +117,58 @@ a {
 
 
 .first-screen img:nth-of-type(1) {
-    vertical-align: top;
-    float: left;
+    position: absolute;
     margin-left: .4rem;
     margin-top: 4.68rem;
 }
 
 .first-screen img:nth-of-type(2) {
-    float: left;
-    margin-left: .62rem;
-    margin-top: 2.63rem;
+    position: absolute;
+    margin-left: 1.15rem;
+    margin-top: 2.68rem;
     width: 4.2rem;
     height: 4.2rem;
 }
 
 .first-screen img:nth-of-type(3) {
+    position: absolute;
     width: .5rem;
     height: .8rem;
-    float: right;
-    vertical-align: top;
-    margin-right: 2.96rem;
-    margin-top: 2.07rem;
+    margin-left: 2.96rem;
+    margin-top: 8.86rem;
 }
 .first-screen img:nth-of-type(4) {
-    float: left;
-    margin-left: 6rem;
-    margin-top: -4.91rem;
+    position: absolute;
+    margin-left: 5.92rem;
+    margin-top: 4.68rem;
 }
-
+.first-screen img:nth-of-type(5) {
+    position: absolute;
+    width: 4.22rem;
+    height: 4.22rem;
+    margin-left: 1.1rem;
+    margin-top: 2.63rem;
+}
+.first-screen img.OUTLINE{
+    animation: breath 6s ease-in-out infinite;
+}
+@-webkit-keyframes breath {
+    from {
+        opacity: 1;
+        width: 4.21rem;
+        height: 4.21rem;
+    }
+    50% {
+        opacity: 0.4;
+        width: 4.22rem;
+        height: 4.22rem;
+    }
+    to {
+        opacity: 1;
+        width: 4.21rem;
+        height: 4.21rem;
+    }
+}
 .content1 {
     display: block;
     position: absolute;
@@ -960,6 +984,11 @@ a {
 .content3 .part2 {
     height: 5.38rem;
     background: url("../img/page3/page3_02.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .part305 {
+    height: 39.03rem;
+    background: url("../img/page3/page3_05.png") no-repeat;
     background-size: 100% 100%;
 }
 .content3 .cooperationLog{
