@@ -149,9 +149,9 @@ a {
     margin-left: 1.1rem;
     margin-top: 2.63rem;
 }
-.first-screen img.OUTLINE{
+/*.first-screen img.OUTLINE{
     animation: breath 6s ease-in-out infinite;
-}
+}*/
 @-webkit-keyframes breath {
     from {
         opacity: 1;
