@@ -981,37 +981,54 @@ a {
     height: 2.19rem;
 }*/
 /********************cont3******************************/
+.content3 {
+    background-color: #ac4543;
+    overflow-x: hidden;
+}
 .content3 .part2 {
-    height: 5.38rem;
-    background: url("../img/page3/page3_02.png") no-repeat;
-    background-size: 100% 100%;
-}
-.content3 .part305 {
-    height: 39.03rem;
-    background: url("../img/page3/page3_05.png") no-repeat;
-    background-size: 100% 100%;
-}
-.content3 .cooperationLog{
-    height: 3.83rem;
-    background: url("../img/page3/cooperationLog_02.png") no-repeat;
+    height: 9.44rem;
+    background: url("../img/page3/parg3_1.png") no-repeat;
     background-size: 100% 100%;
 }
 .content3 .part3 {
-    height: 14.2rem;
-    background: url("../img/page3/page3_03.png") no-repeat;
+    height: 6.29rem;
+    background: url("../img/page3/parg3_2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .part4 {
+    height: 6.69rem;
+    background: url("../img/page3/parg3_3.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .page5 {
+    height: 6.9rem;
+    background: url("../img/page3/parg3_4.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .page6{
+    height: 6.79rem;
+    background: url("../img/page3/parg3_5.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .page7{
+    height: 6.39rem;
+    background: url("../img/page3/parg3_6.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .page8{
+    height: 7.42rem;
+    background: url("../img/page3/parg3_7.png") no-repeat;
+    background-size: 100% 100%;
+}
+.content3 .page9{
+    height: 45.71rem;
+    background: url("../img/page3/parg3_8.png") no-repeat;
     background-size: 100% 100%;
 }
 
-.content3 .part4 {
-    height: 18.18rem;
-    background: url("../img/page3/page3_04.png") no-repeat;
-    background-size: 100% 100%;
-}
-.content3 .last{
-    height: 9.4rem;
-    background: url("../img/page3/last.png") no-repeat;
-    background-size: 100% 100%;
-}
+
+
+
 .biger{
     animation: big 2.5s linear;
     animation-fill-mode: forwards;

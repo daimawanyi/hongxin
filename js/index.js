@@ -38,6 +38,12 @@ bg.style.height = window.screen.availHeight + 'px';
 vid.style.height = window.screen.availHeight + 'px';
 content1.style.top = bg.style.height;
 content1.style.display = 'block';
+var img2 = new Image();
+img2.src = 'img/bg2.png';
+var img3 = new Image();
+img3.src = 'img/bg3.png';
+var img4 = new Image();
+img4.src = 'img/bg4.png';
 function removeClass(curEle, strClass) {
     var aryClass = strClass.replace(/(^ +)|( +$)/g, '').split(/\s+/g);
     for (var i = 0; i < aryClass.length; i++) {
@@ -1264,7 +1270,36 @@ function changeContent() {
             }
 
         }
-
+        var part31 = document.getElementsByClassName('part3')[2];
+        if (offset(part31).top <= cs && offset(part31).top != 0) {
+            if (part31.className == 'part3')
+                part31.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
+        var part32 = document.getElementsByClassName('part4')[2];
+        if (offset(part32).top <= cs && offset(part32).top != 0) {
+            if (part32.className == 'part4')
+                part32.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
+        var part33 = document.getElementsByClassName('page5')[0];
+        if (offset(part33).top <= cs && offset(part33).top != 0) {
+            if (part33.className == 'page5')
+                part33.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
+        var part34 = document.getElementsByClassName('page6')[0];
+        if (offset(part34).top <= cs && offset(part34).top != 0) {
+            if (part34.className == 'page6')
+                part34.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
+        var part35 = document.getElementsByClassName('page7')[0];
+        if (offset(part35).top <= cs && offset(part35).top != 0) {
+            if (part35.className == 'page7')
+                part35.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
+        var part36 = document.getElementsByClassName('page8')[0];
+        if (offset(part36).top <= cs && offset(part36).top != 0) {
+            if (part36.className == 'page8')
+                part36.className += ' ' + 'animated' + ' ' + 'fadeInUp';
+        }
         var part41 = document.getElementsByClassName('part3')[3];
         if (offset(part41).top <= cs && offset(part41).top != 0) {
             if (part41.className == 'part3')
