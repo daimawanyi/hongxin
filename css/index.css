@@ -994,31 +994,37 @@ a {
     height: 6.29rem;
     background: url("../img/page3/parg3_2.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .part4 {
     height: 6.69rem;
     background: url("../img/page3/parg3_3.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .page5 {
     height: 6.9rem;
     background: url("../img/page3/parg3_4.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .page6{
     height: 6.79rem;
     background: url("../img/page3/parg3_5.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .page7{
     height: 6.39rem;
     background: url("../img/page3/parg3_6.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .page8{
     height: 7.42rem;
     background: url("../img/page3/parg3_7.png") no-repeat;
     background-size: 100% 100%;
+    opacity: 0;
 }
 .content3 .page9{
     height: 45.71rem;
