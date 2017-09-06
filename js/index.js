@@ -1397,7 +1397,7 @@ bg.addEventListener('touchend', function (e) {
 
 function readyFn() {
     var vid = document.querySelector('.vid'),
-        img = dom.querySelector('img');
+        img = vid.querySelector('img');
     var IMG_W = img.width,
         IMG_H = img.height;
     var WIN_W = document.documentElement.clientWidth,
@@ -1405,8 +1405,8 @@ function readyFn() {
     var timefragment = 0,               // 时间片计时
         nowts = 0;                      // 当前时间
     // 设置默认的left/top
-    dom.style.top = -(IMG_H - WIN_H) / 2 + 'px';
-    dom.style.left = -(IMG_W - WIN_W) / 2 + 'px';
+    vid.style.top = -(IMG_H - WIN_H) / 2 + 'px';
+    vid.style.left = -(IMG_W - WIN_W) / 2 + 'px';
     window.addEventListener('deviceorientation', function (evt) {
         nowts = new Date().getTime();
         // 控制时间片
@@ -1415,15 +1415,15 @@ function readyFn() {
             var alpha = evt.alpha,          //垂直于屏幕的轴 0 ~ 360
                 beta = evt.beta,            //横向 X 轴 -180 ~ 180
                 gamma = evt.gamma;          //纵向 Y 轴 -90 ~ 90
-            var top = parseInt(dom.style.top, 10) || 0,
-                left = parseInt(dom.style.left, 10) || 0;
+            var top = parseInt(vid.style.top, 10) || 0,
+                left = parseInt(vid.style.left, 10) || 0;
             var _top, _left;
             _top = top + (beta / 180 * 30);
             _left = left + (gamma / 90 * 30);
             _top = _top >= 0 ? 0 : (_top < (WIN_H - IMG_H) ? (WIN_H - IMG_H) : _top);
             _left = _left >= 0 ? 0 : (_left < (WIN_W - IMG_W) ? (WIN_W - IMG_W) : _left);
-            dom.style.top = _top + 'px';
-            dom.style.left = _left + 'px';
+            vid.style.top = _top + 'px';
+            vid.style.left = _left + 'px';
         }
     }, false);
 }
