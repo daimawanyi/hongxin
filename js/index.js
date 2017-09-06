@@ -1396,34 +1396,21 @@ bg.addEventListener('touchend', function (e) {
 });
 
 function readyFn() {
-    var vid = document.querySelector('.vid'),
-        img = vid.querySelector('img')[0];
-    var IMG_W = img.width,
-        IMG_H = img.height;
-    var WIN_W = document.documentElement.clientWidth,
-        WIN_H = document.documentElement.clientHeight;
-    var timefragment = 0,               // 时间片计时
-        nowts = 0;                      // 当前时间
-    // 设置默认的left/top
-    vid.style.top = -(IMG_H - WIN_H) / 2 + 'px';
-    vid.style.left = -(IMG_W - WIN_W) / 2 + 'px';
-    window.addEventListener('deviceorientation', function (evt) {
-        nowts = new Date().getTime();
-        // 控制时间片
-        if (nowts  - timefragment > 37) {
-            timefragment = nowts;
-            var alpha = evt.alpha,          //垂直于屏幕的轴 0 ~ 360
-                beta = evt.beta,            //横向 X 轴 -180 ~ 180
-                gamma = evt.gamma;          //纵向 Y 轴 -90 ~ 90
-            var top = parseInt(vid.style.top, 10) || 0,
-                left = parseInt(vid.style.left, 10) || 0;
-            var _top, _left;
-            _top = top + (beta / 180 * 30);
-            _left = left + (gamma / 90 * 30);
-            _top = _top >= 0 ? 0 : (_top < (WIN_H - IMG_H) ? (WIN_H - IMG_H) : _top);
-            _left = _left >= 0 ? 0 : (_left < (WIN_W - IMG_W) ? (WIN_W - IMG_W) : _left);
-            vid.style.top = _top + 'px';
-            vid.style.left = _left + 'px';
+    var vid = document.querySelector('.vid');
+        window.ondevicemotion = function(e) {
+
+        var accGravity = e.accelerationIncludingGravity;
+        var ax = event.accelerationIncludingGravity.x * 5;
+
+        if(ax > 14){ //move right on device
+            alert("right");
         }
-    }, false);
-}
+        if(ax < -14 && status != 1){ //move left on device
+            alert("left");
+        }
+        if(ax > -14 && ax < 14 && status != 3){ //device held steady
+            alert("steady");
+        }
+
+    };
+}readyFn()
