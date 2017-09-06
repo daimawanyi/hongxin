@@ -1400,12 +1400,16 @@ function readyFn() {
         window.ondevicemotion = function(e) {
         var accGravity = e.accelerationIncludingGravity;
         var ax = event.accelerationIncludingGravity.x * 5;
+        var ay = event.accelerationIncludingGravity.y * 5;
 
-        if(ax > 14){ //move right on device
-            vid.style.left=1+'rem';
+        if((ax < 14&&ax>0)|| (ay<14&&ay>0)){ //move right on device
+            vid.style.left=parseInt(vid.style.left)+.2+'rem';
         }
-        if(ax < -14 && status != 1){ //move left on device
-            vid.style.left=-1+'rem';
+
+
+
+        if((ax > -14 && status != 1 && ax<0)||(ay > -14 && status != 1&&ay<0)){ //move left on device
+            vid.style.left=parseInt(vid.style.left)-.2+'rem';
         }
         /*if(ax > -14 && ax < 14 && status != 3){ //device held steady
             alert("steady");
