@@ -1393,6 +1393,29 @@ bg.addEventListener('touchend', function (e) {
         console.log('请滑动')
     }
 
-})
+});
 
+function zhongli(){
+    var timefragment = 0,               // 时间片计时
+        nowts = 0;
+    window.addEventListener('deviceorientation', function (evt) {
 
+        nowts = new Date().getTime();
+        // 控制时间片
+        if (nowts  - timefragment > 37) {
+            timefragment = nowts;
+            var alpha = evt.alpha,          //垂直于屏幕的轴 0 ~ 360
+                beta = evt.beta,            //横向 X 轴 -180 ~ 180
+                gamma = evt.gamma;          //纵向 Y 轴 -90 ~ 90
+            var top = parseInt(vid.style.top, 10) || 0,
+                left = parseInt(vid.style.left, 10) || 0;
+            var _top, _left;
+            _top = top + (beta / 180 * 30);
+            _left = left + (gamma / 90 * 30);
+            _top = _top >= 0 ? 0 : (_top < (WIN_H - IMG_H) ? (WIN_H - IMG_H) : _top);
+            _left = _left >= 0 ? 0 : (_left < (WIN_W - IMG_W) ? (WIN_W - IMG_W) : _left);
+            vid.style.top = _top + 'px';
+            vid.style.left = _left + 'px';
+        }
+    }, false);
+}
