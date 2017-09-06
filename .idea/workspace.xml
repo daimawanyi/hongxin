@@ -20,7 +20,7 @@
     <favorites_list name="移动" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.34249473">
+    <splitter split-orientation="horizontal" split-proportion="0.2482043">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
@@ -64,8 +64,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.29032257">
-                  <caret line="1403" column="16" selection-start-line="1403" selection-start-column="16" selection-end-line="1403" selection-end-column="16" />
+                <state vertical-scroll-proportion="1.0617111">
+                  <caret line="1426" column="9" selection-start-line="1426" selection-start-column="9" selection-end-line="1426" selection-end-column="9" />
                   <folding>
                     <element signature="e#962#1234#0" expanded="false" />
                     <element signature="n#!!block;n#removeClass#0" expanded="false" />
@@ -945,26 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29032257">
-          <caret line="1403" column="16" selection-start-line="1403" selection-start-column="16" selection-end-line="1403" selection-end-column="16" />
-          <folding>
-            <element signature="e#962#1234#0" expanded="false" />
-            <element signature="n#!!block;n#removeClass#0" expanded="false" />
-            <element signature="n#!!block;n#offset#0" expanded="false" />
-            <element signature="e#2836#2868#0" expanded="false" />
-            <element signature="e#2903#6262#0" expanded="false" />
-            <element signature="e#6297#9757#0" expanded="false" />
-            <element signature="e#9792#13252#0" expanded="false" />
-            <element signature="e#13287#16745#0" expanded="false" />
-            <element signature="e#16808#24203#0" expanded="false" />
-            <element signature="e#24261#31613#0" expanded="false" />
-            <element signature="n#!!block;n#changeContent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45467836">
@@ -983,6 +963,26 @@
             <element signature="n#div#31;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#32;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0617111">
+          <caret line="1426" column="9" selection-start-line="1426" selection-start-column="9" selection-end-line="1426" selection-end-column="9" />
+          <folding>
+            <element signature="e#962#1234#0" expanded="false" />
+            <element signature="n#!!block;n#removeClass#0" expanded="false" />
+            <element signature="n#!!block;n#offset#0" expanded="false" />
+            <element signature="e#2836#2868#0" expanded="false" />
+            <element signature="e#2903#6262#0" expanded="false" />
+            <element signature="e#6297#9757#0" expanded="false" />
+            <element signature="e#9792#13252#0" expanded="false" />
+            <element signature="e#13287#16745#0" expanded="false" />
+            <element signature="e#16808#24203#0" expanded="false" />
+            <element signature="e#24261#31613#0" expanded="false" />
+            <element signature="n#!!block;n#changeContent#0" expanded="false" />
           </folding>
         </state>
       </provider>
