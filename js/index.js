@@ -1397,7 +1397,7 @@ bg.addEventListener('touchend', function (e) {
 
 function readyFn() {
     var vid = document.querySelector('.vid'),
-        img = vid.querySelector('img');
+        img = vid.querySelector('img')[0];
     var IMG_W = img.width,
         IMG_H = img.height;
     var WIN_W = document.documentElement.clientWidth,
