@@ -1398,19 +1398,18 @@ bg.addEventListener('touchend', function (e) {
 function readyFn() {
     var vid = document.querySelector('.vid');
         window.ondevicemotion = function(e) {
-
         var accGravity = e.accelerationIncludingGravity;
         var ax = event.accelerationIncludingGravity.x * 5;
 
         if(ax > 14){ //move right on device
-            alert("right");
+            vid.style.left=1+'rem';
         }
         if(ax < -14 && status != 1){ //move left on device
-            alert("left");
+            vid.style.left=-1+'rem';
         }
-        if(ax > -14 && ax < 14 && status != 3){ //device held steady
+        /*if(ax > -14 && ax < 14 && status != 3){ //device held steady
             alert("steady");
-        }
+        }*/
 
     };
 }readyFn()
