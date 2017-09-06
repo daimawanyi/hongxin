@@ -1403,17 +1403,30 @@ function readyFn() {
         var ay = event.accelerationIncludingGravity.y * 5;
 
         if((ax < 14&&ax>0)|| (ay<14&&ay>0)){ //move right on device
-            vid.style.left=parseInt(vid.style.left)+.5+'rem';
+            if (vid.style.left == '') {
+                vid.style.left = 0.5 + 'rem';
+            } else {
+                var a = vid.style.left;
+                var vslpa = parseInt(a);
+                vslpa += 0.5;
+                vid.style.left = vslpa + 'rem';
+            }
+
         }
 
 
 
         if((ax > -14 && status != 1 && ax<0)||(ay > -14 && status != 1&&ay<0)){ //move left on device
-            vid.style.left=parseInt(vid.style.left)-.5+'rem';
+            if (vid.style.left == '') {
+                vid.style.left = -0.5 + 'rem';
+            } else {
+                var a1 = vid.style.left;
+                var vslpa1 = parseInt(a1);
+                vslpa1 += -0.5;
+                vid.style.left = vslpa1 + 'rem';
+            }
         }
-        /*if(ax > -14 && ax < 14 && status != 3){ //device held steady
-            alert("steady");
-        }*/
+
 
     };
 }readyFn()
